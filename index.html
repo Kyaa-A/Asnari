@@ -5,28 +5,52 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="index.css" rel="stylesheet" />
-  <script src="index.js"></script>
+  <link href="css/index.css" rel="stylesheet" />
+  <script src="js/index.js"></script>
   <script src="https://kit.fontawesome.com/6ef686f5d0.js" crossorigin="anonymous"></script>
   <title>Portfolio</title>
 </head>
 
 <body>
-  <div id="container">
-
+  <div id="containerBody">
     <div class="header">
-      <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
+      <img src="assets/logox.png" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
 
     <section id="home" class="section1">
+      <div class="containerSec1">
+
+        <div class="Left">
+      <img src="assets/leftpic.png" />
+
+        </div>
+        <div class="Right">
+          <div class="SecOneDesc">
+            <h1>It's Asnari Pacalna</h1>
+            <h3 class="text-animation">
+              I'm a <span></span> 
+            </h3> <br>
+            <p>I am a 2nd-year BSIT student with a small amount of experience in programming and website development.</p>
+          <a href="https://linktr.ee/Asnar" target="_blank"><button class="btn">LINKTREE</button></a>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </section>
+
+    <section id="profile" class="section2">
       <svg class="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
         <path fill="#A3AB78"
           d="M30,-52.1C36,-48.5,36,-34.6,41,-24.2C46.1,-13.8,56.2,-6.9,64.6,4.9C73,16.6,79.7,33.3,75.5,45.1C71.3,56.9,56.1,63.8,41.7,64.4C27.2,64.9,13.6,59,-1.1,60.9C-15.9,62.9,-31.7,72.7,-42.1,69.8C-52.5,66.9,-57.4,51.5,-58.9,37.7C-60.4,24,-58.5,12,-60.9,-1.4C-63.3,-14.8,-70.2,-29.6,-68,-42.2C-65.9,-54.8,-54.8,-65.2,-41.9,-64.9C-29.1,-64.6,-14.6,-53.5,-1.3,-51.3C12,-49.1,24,-55.7,30,-52.1Z"
@@ -34,31 +58,108 @@
       </svg>
 
       <h1 class="blurryText">Asnari</h1>
-      <div class="contents">
-        <h1>HI THERE!</h1>
-        <h1>I'M ASNARI B. PACALNA</h1><br>
-        <h2 class="second_text">Web Developer/Designer</h2>
-        <p>
-          As a first-year BSIT student, I am proud to have<br>
-          already gained two years of experience in <br>
-          programming and website development. <br>
-          My current goal is to further enhance my skills<br>
-          in this field, and I am confident that I can adapt <br>
-          to any task or situation that comes my way. <br>
-          With a strong passion for my work and a deep <br>
-          sense of devotion, I approach every project with <br>
-          enthusiasm and a commitment to excellence.
-        </p>
-      </div>
+      
+        <div class="contentsSec2">
+          <h3>About Me</h3>
+          <p>My name is Asnari Pacalna. My current goal is to further enhance my skills in this field. I approach every project with enthusiasm and a commitment to excellence. I do a lot of side hustle and grind not only in this fielc but also in finance; you may access some of the projects I'm participating in by clicking my tree link on the first page.</p>
+          <div class="boxSec2"> 
 
-      <img class="picture" src="asnari.png" />
+            <div class="firstRow">
+              <div class="tag"><h4>HTML5</h4>
+                <div class="container">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star "></span>
+                </div>
+              </div>
+              <div class="tag"><h4>CSS3</h4>
+                <div class="container">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+              <div class="tag"><h4>JavaScript</h4>
+                <div class="container">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+            </div>
 
+            <div class="secondRow">
+              <div class="tag"><h4>PHP</h4>
+                <div class="container">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star "></span>
+                </div>
+              </div>
+              <div class="tag"><h4>MYSQL</h4>
+                <div class="container">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star "></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+              <div class="tag"><h4>JQuery</h4>
+                <div class="container">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+            </div>
 
-      <button class="btn">HIRE ME NOW</button>
-
+            <div class="thirdRow">
+              <div class="tag"><h4>ReactJS</h4>
+                <div class="container">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star "></span>
+                  <span class="fa fa-star "></span>
+                </div>
+              </div>
+              <div class="tag"><h4>NodeJS</h4>
+                <div class="container">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star "></span>
+                  <span class="fa fa-star "></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+              <div class="tag"><h4>TailWind</h4>
+                <div class="container">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <img class="picture" src="assets/asnari.png" />
     </section>
 
-    <section id="services" class="section2">
+    <section id="services" class="section3">
       <div class="box">
         <p1>Services</p1>
         <h1>My Skillset</h1>
@@ -66,47 +167,31 @@
         <hr class="line">
 
         <h1 class="blurryText">Services</h1>
-        <div class="card1">
-          <h4>Game Design</h4>
-          <i class="fa-brands fa-reddit-alien fa-2x"></i>
-          <p>I am qualified for the role with skills in game development including concept, mechanics, design, testing, and feedback.</p>
-        </div>
-        <div class="card2">
-          <h4>Web Design</h4>
-          <i class="fa-brands fa-codepen fa-2x"></i>
-          <p>I specialize in custom website design, responsive mobile-friendly design, UX/UI design, and landing page optimization.
-          </p>
-        </div>
-        <div class="card3">
-          <h4>Product Design</h4>
-          <i class="fa-solid fa-bezier-curve fa-2x"></i>
-          <p>Have the experience in sketching, prototyping, manufacturing, sourcing materials, user testing, and feedback implementation.
-          </p>
-        </div>
-        <div class="card4">
-          <h4>Graphic Design</h4>
-          <i class="fa-regular fa-object-group fa-2x"></i>
-          <p>With skills in data visualization, I am qualified in print and digital design, as well as packaging and label design, including infographics.
-          </p>
-        </div>
-        <div class="card5">
-          <h4>Web Development</h4>
-          <i class="fa-solid fa-laptop-code fa-2x"></i>
-          <p>Learning custom web development, e-commerce, content management, mobile-friendly design, and search engine optimization.
-          </p>
-        </div>
-        <div class="card6">
-          <h4>Branding</h4>
-          <i class="fa-brands fa-shopify fa-2x"></i>
-          <p>I have qualifications in developing brand strategies, messaging, visual style guides, and managing launch/rollout processes for brands.
-          </p>
-        </div>
+
+          <div class="card1">
+            <h4>Game Design</h4>
+            <i class="fa-brands fa-reddit-alien fa-2x"></i>
+            <p>I am qualified for the role with skills in game development including concept, mechanics, design, testing, and feedback.</p>
+          </div>
+          <div class="card2">
+            <h4>Web Design</h4>
+            <i class="fa-brands fa-codepen fa-2x"></i>
+            <p>I specialize in custom website design, responsive mobile-friendly design, UX/UI design, and landing page optimization.
+            </p>
+          </div>
+          <div class="card3">
+            <h4>Product Design</h4>
+            <i class="fa-solid fa-bezier-curve fa-2x"></i>
+            <p>Have the experience in sketching, prototyping, manufacturing, sourcing materials, user testing, and feedback implementation.
+            </p>
+          </div>
+
 
       </div>
 
     </section>
 
-    <section id="portfolio" class="section3">
+    <section id="portfolio" class="section4">
       <div class="box">
         <p1>Portfolio</p1>
         <h1>Collection of Works</h1>
@@ -134,15 +219,6 @@
       </div>
     </section>
 
-    <section id="blog" class="section4">
-      <div class="box">
-        <p1>Blog</p1>
-        <h1>Web Chronicles</h1>
-        <h5>Lorem ipsum dolor sit amet. Aut deserunt reprehenderit et quia voluptatem ea expedita expedita sit dolore
-          quam. E</h5>
-        <hr class="line">
-      </div>
-    </section>
 
     <section id="certificates" class="section5">
       <div class="box">
@@ -152,6 +228,8 @@
           quam. E</h5>
         <hr class="line">
       </div>
+
+      
     </section>
 
     <section id="contact" class="section6">
@@ -162,7 +240,7 @@
         <h5>Here are the social media platforms where you can easily reach out to me and stay connected.</h5>
         <hr class="line">
 
-        <img class="picture" src="profile.png">
+        <img class="picture" src="assets/profile.png">
         <div class="email">
           <div><i class="fa-solid fa-envelope"></i></i> Email</div><br>
           <p>asnaripacalna@gmail.com</p>
