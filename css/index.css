@@ -307,7 +307,7 @@ section:nth-child(odd) {
     }
     21%,
     40%{
-        content: "Graphic Designer";
+        content: "Trader";
     }
     41%,
     60%{
@@ -779,4 +779,255 @@ a{
 
 .btn:active {
     transform: translateY(-1px);
+}
+
+
+@media (max-width: 768px){
+    
+    /* HEADER */
+    .header ul li a {
+        font-size: 13px;
+    }
+
+    .header ul li {
+        margin: 0 10px;
+        display: inline;
+    }
+
+    .header{
+        padding: 0 30px;
+    }
+
+    /* SECTION1 */
+    #containerBody {
+        margin: 0;
+        height: auto;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+    .section1 .Right .SecOneDesc h1{
+        font-size: 30px;
+    }
+    
+    .section1 .Right .SecOneDesc p{
+        font-size: 15px;
+    }
+
+    .text-animation{
+        font-size: 20px;
+        font-weight: 600;
+        min-width: 280px;
+    }
+
+    .Left .picleft{
+        height: 85%;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 10px;
+        letter-spacing: 2.5px;
+    }
+
+    /* SECTION2 */
+
+    .section2 .blob {
+        bottom: 450px;
+    }
+
+    .section2 .blurryText {
+        display: none;
+    }
+    
+    .section2{
+        padding: 0 0 0 5%;
+    }
+    
+    .contentsSec2 h3{ 
+        font-size: 20px;
+    } 
+    
+    .contentsSec2 h4{ 
+        font-size: 12px;
+    }
+    
+    .section2 .picture {
+        height: 23em;
+        border-radius: 0 0 100% 150%;
+    }
+
+    .section2 .contentsSec2 .boxSec2{
+        margin: 5% 0 0 0;
+        min-height: 10vh;
+        padding: 5% 0;
+        z-index: 1;
+    }
+
+    .section2 h4{
+        padding: 0 0 2px 0;
+        color: var(--primary);
+        font-weight: 900;
+    }
+    
+    .firstRow, .secondRow{
+        margin: 0 0 3% 0;
+    }
+
+    .section2 .container{
+        height: 10px;
+    }
+
+    /* SECTION3 */
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--tertiary);
+    margin: 0 20px;
+}
+
+.card1, .card2, .card3{
+    min-height: 40vh;
+}
+
+.section3 .tagline {
+    display: none;
+}
+
+/* SECTION4 */
+
+.headerSec4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    width: 70%;
+}
+
+/* SECTION5 */
+
+.headerSec5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    width: 50%;
+}
+
+.section5 hr{
+    border: 1px solid var(--quinary);
+    width: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.section5 p1{
+    font-weight: 900;
+    color: var(--quinary);
+}
+
+.section5 h1{
+    color: var(--tertiary);
+}
+
+/* Certs */
+
+.section5 .card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+  
+.section5 .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+}
+  
+.section5 .card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+  
+
+.section5 .card{
+    margin-top: 2.5%;
+    height: 30vh;
+    width: 45vh;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+  
+.card-front {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border: 10px solid var(--tertiary);
+    border-radius: 10px;
+    justify-content: center;
+    transform: rotateY(0deg);
+}
+
+.card-front  .cert{
+    height:100%;
+    width: 100%;
+}
+  
+.card-back {
+    background-color: var(--quaternary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border: 10px solid var(--tertiary);
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+}
+
+.section5 .grid{
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 1% 0 3% 0;
+}
+
+.headerSec5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    width: 70%;
+}
+
+/* SECTION6 */
+
+.contentSec6{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    min-height: 20vh;
+    margin: 0 0 2.5% 0;
+}
+
+.section6 .tagline{
+    display: none;
+}
+
 }
