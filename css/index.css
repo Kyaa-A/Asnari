@@ -207,19 +207,22 @@ section:nth-child(odd) {
 .contentsSec2 h3{ 
     margin-bottom: 3%;
     font-weight: bolder;
-    font-size:x-large;
+    font-size:xx-large;
     margin-top: 5%;
     color: var(--tertiary);
-    animation: zoomi;
 }
 
 .contentsSec2 p{
     color: var(--tertiary);
+    width: 95%;
+    text-align: justify;
 }
 
 .section2 .picture {
     height: 30em;
     border-radius: 0 0 100% 150%;
+    padding: 0 7% 0 0;
+
 }
 
 .section2 .contentsSec2 p{
@@ -227,13 +230,14 @@ section:nth-child(odd) {
 }
 
 .section2 .contentsSec2 .boxSec2{
-    margin: 5% 0 0 0;
+    margin: 2% 0 0 0;
     color: #fff;
     background-color: #333;
     border-radius: 10px;
     min-height: 20vh;
-    padding: 5% 0;
+    padding: 3% 0;
     z-index: 1;
+    width: 95%;
 }
 
 .section2 .contentsSec2 .boxSec2 .firstRow,.secondRow,.thirdRow{
@@ -258,6 +262,7 @@ section:nth-child(odd) {
     padding: 0 0 2px 0;
     color: var(--primary);
     font-weight: 900;
+    font-size: 18px;
 }
 
 .firstRow, .secondRow{
@@ -533,6 +538,8 @@ section:nth-child(odd) {
 .section4 h1{
     color: var(--tertiary);
 }
+
+
 
 /*** Sectiion5 - Certificates ***/
 .section5{
@@ -1030,4 +1037,19 @@ a{
     display: none;
 }
 
+}
+
+
+.center{
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.center img{
+    height: 30vh;
+    border: 5px solid black;
 }
