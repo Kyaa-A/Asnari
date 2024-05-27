@@ -238,7 +238,7 @@ section:nth-child(odd) {
     padding: 3% 0;
     z-index: 1;
     width: 95%;
-}
+    }
 
 .section2 .contentsSec2 .boxSec2 .firstRow,.secondRow,.thirdRow{
     display: flex;
