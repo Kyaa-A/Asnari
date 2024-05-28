@@ -440,8 +440,8 @@ section:nth-child(odd) {
 .cards{
     display: flex;
     flex-direction: row;
-    width: 60%;
-    justify-content: space-around;
+    width: 68%;
+    justify-content: space-between;
     min-height: 50vh;
     align-items: center;
     color: var(--tertiary);
@@ -539,7 +539,94 @@ section:nth-child(odd) {
     color: var(--tertiary);
 }
 
+/* test */
 
+.containerCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+    height: 100%;
+    align-items: center;
+    padding: 2% 2.5%;
+}
+
+.cardPort {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    border-radius: 14px;
+    z-index: 1111;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    ;
+}
+  
+.bg {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 240px;
+    height: 340px;
+    z-index: 2;
+    background: rgba(255, 255, 255, .95);
+    backdrop-filter: blur(24px);
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 2px solid black;
+}
+  
+.blobPort {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    opacity: 1;
+    filter: blur(12px);
+    animation: blob-bounce 5s infinite ease;
+}
+  
+@keyframes blob-bounce {
+    0% {
+      transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+  
+    25% {
+      transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+    }
+  
+    50% {
+      transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+    }
+  
+    75% {
+      transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+    }
+  
+    100% {
+      transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+}
+
+.firstProj{
+    background-image: url(../assets/proj1.png);
+}
+
+.secondProj{
+    background-image: url(../assets/proj2.png);
+}
+
+.thirdProj{
+    background-image: url(../assets/proj3.png);
+}
 
 /*** Sectiion5 - Certificates ***/
 .section5{
@@ -1058,3 +1145,64 @@ a{
     margin: 0;
 }
 
+/* button project */
+
+.button-icon {
+    margin: 10% 0;
+    display: flex;
+    border: 3px #fff solid;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+  }
+  
+  .icon {
+    background-color: #fff;
+    padding: 10px 10px 5px 10px;
+  }
+  
+  .icon svg {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .cube {
+    transition: all 0.4s;
+    transform-style: preserve-3d;
+    width: 200px;
+    height: 20px;
+  }
+  
+  .button-icon:hover {
+    border-color: #ff98a2;
+  }
+  
+  .button-icon:hover .cube {
+    transform: rotateX(90deg);
+  }
+  
+  .side {
+    position: absolute;
+    height: 47px;
+    width: 200px;
+    display: flex;
+    font-size: 0.8em;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+  }
+  
+  .top {
+    background: var(--quinary);
+    color: #fff;
+    transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
+  }
+  
+  .front {
+    background: #222229;
+    color: #fff;
+    transform: translate3d(0, 0, 1em);
+  }
+  
