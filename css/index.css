@@ -1046,10 +1046,15 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
 }
 
 .center img{
-    height: 30vh;
-    border: 5px solid black;
+    height: 35vh;
+    border: 2px solid black;
 }
+
+
+.headerSec3 p, .headerSec4 p, .headerSec5 p, .headerSec6 p{
+    margin: 0;
+}
+
