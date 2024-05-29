@@ -1174,7 +1174,7 @@ a{
   }
   
   .button-icon:hover {
-    border-color: #ff98a2;
+    border-color: var(--quinary);
   }
   
   .button-icon:hover .cube {
